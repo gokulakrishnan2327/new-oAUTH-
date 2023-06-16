@@ -12,7 +12,6 @@ git clone https://github.com/[your-username]/new-oAUTH-.git
 
 2. Install the dependencies:
 
-Use code with caution. Learn more
 npm install
 
 if you got error with react-router-dom 
