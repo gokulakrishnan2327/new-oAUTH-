@@ -1,0 +1,196 @@
+
+.repo-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.repo-list div {
+  /* background-color: #f5f5f5; */
+  padding: 10px;
+}
+
+.repo-list h3 {
+  margin-top: 0;
+}
+
+.repo-list button {
+  margin-top: 10px;
+}
+
+
+/* App.css */
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff; /* Updated: Set navigation bar color to white */
+  padding: 10px;
+}
+
+.navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+  color: #000; /* Updated: Set text color to black */
+}
+
+.navbar .navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.navbar .toggle-icon {
+  width: 20px;
+  height: 2px;
+  background-color: #000; /* Updated: Set toggle icon color to black */
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navbar.open .toggle-icon {
+  background-color: transparent;
+}
+
+.navbar.open .toggle-icon::before,
+.navbar.open .toggle-icon::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: #000; /* Updated: Set toggle icon color to black */
+  transition: all 0.3s ease;
+}
+
+.navbar.open .toggle-icon::before {
+  top: -6px;
+}
+
+.navbar.open .toggle-icon::after {
+  top: 6px;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.overlay.open {
+  display: block;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin-left: 10px;
+}
+
+.navbar-links li a {
+  color: #000; /* Updated: Set link color to black */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .navbar .navbar-toggle {
+    display: block;
+  }
+
+  .navbar .navbar-links {
+    display: none;
+  }
+
+  .navbar.open .navbar-links {
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    padding: 10px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+}
+
+h2,
+h3,
+p {
+  color: #fff;
+}
+
+input[type="text"] {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #000; /* Updated: Set button background color to black */
+  color: #fff; /* Updated: Set button text color to white */
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555; /* Updated: Set button hover background color to a darker shade of black */
+}
+
+.repo-name {
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.repo-name:hover {
+  color: #f06d06;
+}
+
+/* App.css */
+
+/* ... previous CSS code ... */
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 100%; /* Set the search bar width to 100% */
+  max-width: 400px; /* Set a maximum width for responsiveness */
+}
+
+@media (max-width: 768px) {
+  input[type="text"] {
+    max-width: 100%; /* Adjust the maximum width for smaller screens */
+  }
+}
+
