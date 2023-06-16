@@ -6,7 +6,7 @@ This project demonstrates how to use OAuth to login users to a React application
 
 1. Clone the repository:
 
-git clone https://github.com/[your-username]/oauth-login-react-project.git
+git clone https://github.com/[your-username]/new-oAUTH-.git
 
 2. Install the dependencies:
 
